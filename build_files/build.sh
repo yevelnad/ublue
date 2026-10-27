@@ -15,7 +15,9 @@ cp -avf "/ctx/system_files"/. /
 # this installs a package from fedora repos
 dnf5 install -y tmux \
     sddm \
-    noctalia
+    noctalia \
+    podman \
+    distrobox \
 # Helium Browser
 dnf5 -y copr enable imput/helium
 dnf5 install -y helium-bin
