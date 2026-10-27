@@ -22,7 +22,7 @@ dnf5 install -y helium-bin
 dnf5 -y copr disable imput/helium
 # Hyperland
 dnf5 -y copr enable lionheartp/Hyprland
-dnf5 install -y hyperland \
+dnf5 install -y hyprland \
     hyprland-guiutils
 dnf5 -y copr disable lionheartp/Hyprland
 #### Example for enabling a System Unit File
