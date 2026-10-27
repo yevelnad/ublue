@@ -11,7 +11,7 @@ cp -avf "/ctx/system_files"/. /
 # RPMfusion repos are available by default in ublue main images
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
-dnf5 install 'dnf5-command(copr)'
+dnf5 install -y 'dnf5-command(copr)'
 # this installs a package from fedora repos
 dnf5 install -y \
     tmux \
