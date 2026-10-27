@@ -21,10 +21,10 @@ dnf5 -y copr enable imput/helium
 dnf5 install -y helium-bin
 dnf5 -y copr disable imput/helium
 # Hyperland
-dnf5 -y copr enable lionhearp/Hyperland
+dnf5 -y copr enable lionheartp/Hyperland
 dnf5 install -y hyperland \
     hyprland-guiutils
-dnf5 -y copr disable lionhearp/Hyperland
+dnf5 -y copr disable lionheartp/Hyperland
 #### Example for enabling a System Unit File
 sudo systemctl set-default graphical.target
 systemctl enable podman.socket
