@@ -33,5 +33,11 @@ dnf5 install -y hyprland \
 
 dnf5 -y copr disable lionheartp/Hyprland
 #### Example for enabling a System Unit File
+sudo dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf -y install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf swap ffmpeg-free ffmpeg --allowerasing
+sudo dnf install @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
+sudo dnf install intel-media-driver
+#
 sudo systemctl set-default graphical.target
 systemctl enable podman.socket
