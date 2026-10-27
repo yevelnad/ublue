@@ -15,7 +15,7 @@ dnf5 install -y 'dnf5-command(copr)'
 # this installs a package from fedora repos
 dnf5 install -y \
     tmux \
-    sddm \
+    plasma-login-manager \
     noctalia \
     podman \
     distrobox \
@@ -35,9 +35,9 @@ dnf5 -y copr disable lionheartp/Hyprland
 #### Example for enabling a System Unit File
 sudo dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf -y install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-sudo dnf swap ffmpeg-free ffmpeg --allowerasing
-sudo dnf install @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
-sudo dnf install intel-media-driver
+sudo dnf -y swap ffmpeg-free ffmpeg --allowerasing
+sudo dnf -y install @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
+sudo dnf -y install intel-media-driver
 #
 sudo systemctl set-default graphical.target
 systemctl enable podman.socket
