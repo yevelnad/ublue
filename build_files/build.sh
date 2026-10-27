@@ -18,6 +18,7 @@ dnf5 install -y tmux \
     noctalia \
     podman \
     distrobox \
+    nautilus
 # Helium Browser
 dnf5 -y copr enable imput/helium
 dnf5 install -y helium-bin
