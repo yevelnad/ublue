@@ -11,7 +11,7 @@ cp -avf "/ctx/system_files"/. /
 # RPMfusion repos are available by default in ublue main images
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
-dnf5 install -y 'dnf5-command(copr)'
+#dnf5 install -y 'dnf5-command(copr)'
 # this installs a package from fedora repos
 #dnf5 install -y \
 #    tmux \
@@ -21,17 +21,16 @@ dnf5 install -y 'dnf5-command(copr)'
 #    distrobox \
 #    nautilus \
 # Helium Browser
-dnf5 -y copr enable imput/helium
-dnf5 install -y \
-    helium-bin \
+#dnf5 install -y \
+#   helium-bin \
 
-dnf5 -y copr disable imput/helium
+#nf5 -y copr disable imput/helium
 # Hyperland
-dnf5 -y copr enable lionheartp/Hyprland
-dnf5 install -y hyprland \
-    hyprland-guiutils \
-
-dnf5 -y copr disable lionheartp/Hyprland
+#dnf5 -y copr enable lionheartp/Hyprland
+#dnf5 install -y hyprland \
+#    hyprland-guiutils \
+#
+#dnf5 -y copr disable lionheartp/Hyprland
 #### Example for enabling a System Unit File
 sudo dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf -y install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
