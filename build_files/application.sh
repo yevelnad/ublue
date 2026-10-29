@@ -7,7 +7,8 @@ dnf5 -y install \
     nautilus \
     gnome-console \
     noctalia \
-    plasma-workspace-x11 \
+    layer-shell-qt \
+    #plasma-workspace-x11 \
     #xdg-user-dirs \
     #xdg-user-dirs-gtk \
     #gnome-shell \
