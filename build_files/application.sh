@@ -3,11 +3,21 @@
 set -eoux pipefail
 
 dnf5 -y install \
-    gnome-shell \
-    gdm nautilus \
+    plama-login-manager \
+    nautilus \
     gnome-console \
     xdg-user-dirs \
-    xdg-user-dirs-gtk
+    xdg-user-dirs-gtk \
+    noctalia
+    #gnome-shell \
+    #gdm \
+dnf5 -y copr enable lionheartp/Hyprland && \
+dnf5 -y install \
+    hyprland \
+    hyprland-guiutils \
+    xdg-desktop-portal-hyprland &&\
+dnf5 -y copr disable lionheartp/Hyperland
+
 
 dnf5 -y install \
     flatpak \
