@@ -2,6 +2,8 @@
 
 set -eoux pipefail
 
+dnf5 -y group install @gnome-desktop
+
 dnf5 -y install \
     distrobox \
     git \
