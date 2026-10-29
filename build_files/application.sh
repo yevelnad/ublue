@@ -14,3 +14,5 @@ dnf5 -y remove \
     fedora-flathub-remote \
     fedora-third-party \
     fedora-workstation-repositories
+
+sudo systemctl set-default graphical.target
