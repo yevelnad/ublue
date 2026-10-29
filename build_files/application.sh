@@ -2,7 +2,9 @@
 
 set -eoux pipefail
 
-dnf5 -y group install @gnome-desktop
+sudo dnf install gnome-shell gdm nautilus gnome-console xdg-user-dirs xdg-user-dirs-gtk -y
+sudo dnf install flatpak bash-completion -y
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 dnf5 -y install \
     distrobox \
