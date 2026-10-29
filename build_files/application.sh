@@ -6,9 +6,9 @@ dnf5 -y install \
     plasma-login-manager \
     nautilus \
     gnome-console \
-    xdg-user-dirs \
-    xdg-user-dirs-gtk \
-    noctalia
+    noctalia \
+    #xdg-user-dirs \
+    #xdg-user-dirs-gtk \
     #gnome-shell \
     #gdm \
 dnf5 -y copr enable lionheartp/Hyprland && \
@@ -16,7 +16,7 @@ dnf5 -y install \
     hyprland \
     hyprland-guiutils \
     xdg-desktop-portal-hyprland &&\
-dnf5 -y copr disable lionheartp/Hyperland
+dnf5 -y copr disable lionheartp/Hyprland
 
 
 dnf5 -y install \
