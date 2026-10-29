@@ -3,7 +3,7 @@
 set -eoux pipefail
 
 dnf5 -y install \
-    plama-login-manager \
+    plasma-login-manager \
     nautilus \
     gnome-console \
     xdg-user-dirs \
