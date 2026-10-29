@@ -3,10 +3,11 @@
 set -eoux pipefail
 
 dnf5 -y install \
-    plasma-login-manager \
+    sddm \
     nautilus \
     gnome-console \
     noctalia \
+    plasma-workspace-x11 \
     #xdg-user-dirs \
     #xdg-user-dirs-gtk \
     #gnome-shell \
